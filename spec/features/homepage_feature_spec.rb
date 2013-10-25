@@ -2,12 +2,11 @@ require 'spec_helper'
 
 describe 'Homepage' do 
 
-	context 'the form to send a text' do 
 
-		it 'should have a box to put a mobile number' do 
-			visit root_path
-		end
-
+	it 'should have a message form' do 
+		visit '/'
+		expect(page).to have_css '.text_form'
 	end
+
 
 end

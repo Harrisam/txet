@@ -1,5 +1,8 @@
 Txet::Application.routes.draw do
-  get "txets/hello"
+  
+  root to: 'txets#hello'
+
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
