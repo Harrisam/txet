@@ -19,7 +19,8 @@ development:
   encoding: unicode
   database: txet_development
   pool: 5
-  username: txet
+  host: localhost
+  username: 
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -48,7 +49,8 @@ test:
   encoding: unicode
   database: txet_test
   pool: 5
-  username: txet
+  host: localhost
+  username: 
   password:
 
 production:
