@@ -10,7 +10,7 @@ describe 'Homepage' do
 
 	it 'should have a button' do 
 		visit '/'
-		expect(page).to have_css '.submit_tag'
+		expect(page).to have_css 'button'
 	end
 
 

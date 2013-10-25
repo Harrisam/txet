@@ -11,14 +11,13 @@ describe 'User' do
     it 'should create a new user' do
       visit new_user_registration_path
 
-      fill_in 'Name', with: 'Ketchup'
       fill_in 'Email', with: 'email@email.com'
       fill_in 'Password', with: 'password'
       fill_in 'Password confirmation', with: 'password'
       click_button 'Sign up'
 
       expect(current_path).to eq root_path
-      expect(page).to have_css('.alert', text: "You're ready to spread.")
+      
     end
 
   end
@@ -49,7 +48,6 @@ describe 'User' do
       before(:each) do
         visit new_user_registration_path
 
-        fill_in 'Name', with: 'Ketchup'
         fill_in 'Email', with: 'email@email.com'
         fill_in 'Password', with: 'password'
         fill_in 'Password confirmation', with: 'password'
