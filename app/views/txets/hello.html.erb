@@ -1,2 +1,19 @@
 <h1>Txets - The messaging service using Twilio's API</h1>
 <p>All you will need is a number and a message</p>
+<div class="col-lg-md">
+	<div class="text_form">
+		<h3 class="text-center">Simply fill in the form below</h3>
+		<%= form_tag post_message_path do %>
+			<div class="form-group">
+				<%= label_tag :number_to_send_to,'Phone number to send message to:' %>
+				<%= text_field_tag :number_to_send_to, nil, class: "form-control", placeholder: "Enter number ... "%>
+			</div>
+			<div>
+				<%= text_area_tag :message_to_send, nil, class: "form-control", placeholder:"... and your message"%>
+			</div>
+			<p>
+			</p>
+		<%= submit_tag "Send Message!", class: 'btn btn-default btn-lg' %>
+	  <% end %>
+  </div><!--/.well -->
+</div><!--/span-->

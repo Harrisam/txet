@@ -1,6 +1,12 @@
 Txet::Application.routes.draw do
   
+  devise_for :users
   root to: 'txets#hello'
+
+
+  post 'post_message' => 'send_text#send_text_message'
+
+  
 
 
   # The priority is based upon order of creation: first created -> highest priority.
