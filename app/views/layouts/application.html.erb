@@ -45,9 +45,8 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        
+
         <a class="navbar-brand" href="/">Txet</a>
-        <div class="nav-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav navbar-right">
             <% if current_user %>
               <li><%= link_to "Sign out", destroy_user_session_path %></li>
@@ -56,7 +55,6 @@
               <li><%= link_to "Sign in", new_user_session_path %></li>
           <% end %>
           </ul>
-        </div>
       </div>
     </div>
 
